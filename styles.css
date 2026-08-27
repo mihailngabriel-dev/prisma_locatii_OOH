@@ -72,3 +72,5 @@ button,.filter,.selection-btn,.primary,.ghost{touch-action:manipulation}
  .detail-grid>img{padding:8px;max-height:46vh}
  .detail-copy h2{line-height:1.15}
 }
+
+.request-actions{margin-top:8px}.request-actions .full{margin-top:10px}.clear-btn{margin-top:14px!important;border-style:dashed}.offer-fields input:focus{border-color:var(--purple);box-shadow:0 0 0 3px rgba(61,20,127,.08)}

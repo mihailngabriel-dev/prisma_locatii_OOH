@@ -1,12 +1,7 @@
-PRISMA OOH PLANNER - OFFLINE
+PRISMA OOH PLANNER - ONLINE
 
-1. Dezarhivează folderul.
-2. Deschide index.html în Chrome / Edge.
-3. Folosește filtrele sau căutarea pentru locații.
-4. Selectează pozițiile dorite în „Selecția mea”.
-5. Completează clientul și campania.
-6. Apasă „Generează oferta PDF”, apoi alege Save as PDF / Microsoft Print to PDF.
-
-Aplicația funcționează fără internet. Datele și tarifele sunt preluate din materialele furnizate și trebuie reconfirmate înainte de comandă.
-
-V6: tarife client finale pentru Sinaia/Transalpina/Winmarkt; vizualuri catalog optimizate.
+Actualizare V10:
+- Selecția clientului funcționează ca preview.
+- Generarea PDF a fost eliminată din interfața publică.
+- Cererile de ofertă se trimit prin WhatsApp la 0763 504 228 sau prin e-mail la mihail.n.gabriel@gmail.com.
+- Mesajul include automat locațiile selectate, prețurile afișate și datele completate de client.

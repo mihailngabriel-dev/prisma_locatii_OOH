@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Prisma OOH Planner</title>
-<link rel="stylesheet" href="styles.css?v=9" />
+<link rel="stylesheet" href="styles.css?v=10" />
 </head>
 <body>
 <header class="topbar">
@@ -15,7 +15,7 @@
   <div class="hero-copy">
     <span class="eyebrow">PRISMA ADVERTISING</span>
     <h1>Locații și formate media, într-un singur catalog.</h1>
-    <p>Explorează București, DN1, Constanța, Sinaia, Transalpina și rețeaua Winmarkt. Selectează pozițiile dorite și generează oferta direct din aplicație.</p>
+    <p>Explorează București, DN1, Constanța, Sinaia, Transalpina și rețeaua Winmarkt. Selectează pozițiile dorite, verifică selecția și trimite o cerere de ofertă direct către Prisma Advertising.</p>
     <div class="hero-actions"><button class="primary" data-scroll="#locations">Vezi toate locațiile</button><button class="ghost" onclick="document.getElementById('searchInput').focus();document.getElementById('locations').scrollIntoView()">Caută o locație</button></div>
   </div>
   <div class="portfolio-card">
@@ -34,14 +34,14 @@
 </main>
 <div class="drawer-backdrop" id="drawerBackdrop"></div>
 <aside class="drawer" id="drawer">
-  <div class="drawer-head"><div><span class="eyebrow">OFERTĂ</span><h2>Selecția mea</h2></div><button class="icon-btn" id="closeDrawer">×</button></div>
+  <div class="drawer-head"><div><span class="eyebrow">PREVIEW</span><h2>Selecția mea</h2></div><button class="icon-btn" id="closeDrawer">×</button></div>
   <div id="selectedList" class="selected-list"></div>
-  <div class="offer-fields"><label>Client<input id="clientName" placeholder="Nume client / companie"></label><label>Campanie<input id="campaignName" placeholder="Ex. Campanie Iarnă 2026"></label></div>
+  <div class="offer-fields"><label>Nume / companie<input id="clientName" placeholder="Ex. Compania ABC"></label><label>Campanie / perioadă<input id="campaignName" placeholder="Ex. Septembrie - Octombrie 2026"></label><label>Telefon / e-mail<input id="clientContact" placeholder="Datele tale de contact"></label></div>
   <div class="total-row"><span>Subtotal tarife lunare</span><strong id="offerTotal">0 EUR</strong></div><div id="totalHint" class="total-hint"></div>
-  <p class="vat-note">Subtotalul include doar tarifele cu perioadă lunară explicită. Condițiile, TVA și costurile de producție/decorare se confirmă conform fișei fiecărei locații.</p>
-  <button class="primary full" id="generatePdf">Generează oferta PDF</button><button class="ghost full" id="clearSelection">Golește selecția</button>
+  <p class="vat-note">Aceasta este doar o selecție orientativă. Oferta comercială finală, disponibilitatea și condițiile se confirmă de Prisma Advertising.</p>
+  <div class="request-actions"><button class="primary full" id="requestWhatsapp">Cere ofertă pe WhatsApp</button><button class="ghost full" id="requestEmail">Cere ofertă pe e-mail</button></div><button class="ghost full clear-btn" id="clearSelection">Golește selecția</button>
 </aside>
 <div class="modal-backdrop" id="modalBackdrop"></div>
 <div class="modal" id="detailModal" role="dialog" aria-modal="true"><button class="modal-close" id="modalClose">×</button><div id="modalContent"></div></div>
-<script src="locations.js?v=9"></script><script src="app.js?v=9"></script>
+<script src="locations.js?v=10"></script><script src="app.js?v=10"></script>
 </body></html>

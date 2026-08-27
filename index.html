@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Prisma OOH Planner</title>
+<link rel="stylesheet" href="styles.css?v=9" />
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><img src="assets/prisma_logo.jpg" alt="Prisma Advertising"><div><strong>OOH Planner</strong><span>Portofoliu OOH & mountain media</span></div></div>
+  <button class="selection-btn" id="selectionBtn">Selecția mea <span id="selectionCount">0</span></button>
+</header>
+<section class="hero">
+  <div class="hero-copy">
+    <span class="eyebrow">PRISMA ADVERTISING</span>
+    <h1>Locații și formate media, într-un singur catalog.</h1>
+    <p>Explorează București, DN1, Constanța, Sinaia, Transalpina și rețeaua Winmarkt. Selectează pozițiile dorite și generează oferta direct din aplicație.</p>
+    <div class="hero-actions"><button class="primary" data-scroll="#locations">Vezi toate locațiile</button><button class="ghost" onclick="document.getElementById('searchInput').focus();document.getElementById('locations').scrollIntoView()">Caută o locație</button></div>
+  </div>
+  <div class="portfolio-card">
+    <span class="eyebrow">PORTOFOLIU</span><div class="big-number" id="totalLocations">0</div><div class="big-label">poziții / formate în catalog</div>
+    <div class="portfolio-grid"><div><b>București & DN1</b><span>mesh / unipol</span></div><div><b>Sinaia</b><span>gondolă / telecabină</span></div><div><b>Transalpina</b><span>ski resort branding</span></div><div><b>Winmarkt</b><span>mesh urban</span></div></div>
+    <div class="offline-badge">✓ Optimizat pentru mobil · Chrome · Edge · Safari</div>
+  </div>
+</section>
+<main id="locations">
+  <div class="section-head">
+    <div><span class="eyebrow">INVENTAR</span><h2 id="inventoryCount">Locații</h2></div>
+    <div class="search-wrap"><input id="searchInput" type="search" placeholder="Caută oraș, adresă, cod, format..." /></div>
+  </div>
+  <div class="filters" id="filters"></div>
+  <div class="grid" id="locationGrid"></div>
+</main>
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="drawer" id="drawer">
+  <div class="drawer-head"><div><span class="eyebrow">OFERTĂ</span><h2>Selecția mea</h2></div><button class="icon-btn" id="closeDrawer">×</button></div>
+  <div id="selectedList" class="selected-list"></div>
+  <div class="offer-fields"><label>Client<input id="clientName" placeholder="Nume client / companie"></label><label>Campanie<input id="campaignName" placeholder="Ex. Campanie Iarnă 2026"></label></div>
+  <div class="total-row"><span>Subtotal tarife lunare</span><strong id="offerTotal">0 EUR</strong></div><div id="totalHint" class="total-hint"></div>
+  <p class="vat-note">Subtotalul include doar tarifele cu perioadă lunară explicită. Condițiile, TVA și costurile de producție/decorare se confirmă conform fișei fiecărei locații.</p>
+  <button class="primary full" id="generatePdf">Generează oferta PDF</button><button class="ghost full" id="clearSelection">Golește selecția</button>
+</aside>
+<div class="modal-backdrop" id="modalBackdrop"></div>
+<div class="modal" id="detailModal" role="dialog" aria-modal="true"><button class="modal-close" id="modalClose">×</button><div id="modalContent"></div></div>
+<script src="locations.js?v=9"></script><script src="app.js?v=9"></script>
+</body></html>
